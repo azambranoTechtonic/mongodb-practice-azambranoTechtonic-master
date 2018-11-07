@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MongoDB with Robo 3T</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- BOOTSTRAP CDN -->
+  </head>
+  <body>
+    <h1 class="text-center">MongoDB with Robo 3T Assignment</h1>
+    <h4 class="text-center" id="user"></h4>
+    <div class="container">
+    <h2>Instructions</h2>
+    <p>Don't forget your name add it inside index.js on line 4.  Each problem will have a pre tag with an id attribute problem-# assigned to it.  The answer to each of the problems will be placed inside a specific pre by using document.getElementById("problem-#").innerHTML = yourAnswer.  All answers should be completed inside of index.js look for commented brackets to know where to place your code.  All answers should be placed in an ES6 template literal (tic marks ``) so proper formatting inside the pre tags can be utilized.  <a href="https://www.w3schools.com/tags/tag_pre.asp">Here</a> is a reference on what a pre tag is used for.  If you need to reference any of the mongoose methods visit <a href="https://mongoosejs.com/docs/api.html">https://mongoosejs.com/docs/api.html</a> and use cmd-f to search for the method you need.</p>
+      </div>
+    <div class="container">
+      <h3 class="problem-1">Problem 1:</h3>
+      <p>Write a query that will be used to <strong><em>find</em></strong> all of the BMW vehicles in our cars collection.</p>
+      <pre id="problem-1">
+      </pre>
+      <div class="answerKey">
+        <h4>Solution</h4>
+        <pre id="answer-1">
+        </pre>
+        <h5>Feedback</h5>
+        <p id="feedback-1"></p>
+      </div>
+      <br>
+      <h3 class="problem-2">Problem 2:</h3>
+      <p>Write a query that will add a car to the collection.  The object you will <strong><em>insert</em></strong> should look like the example below.
+        <pre>
+          {
+            "car_make" : "Brett",
+            "car_model" : "Goers",
+            "color" : "MellowYellow",
+            "mileage" : 97000,
+            "year" : 2020,
+            "price" : "$35000" ,
+            "dealership" : ObjectId('5be08de136317c7f3cd52865')}</pre>
+          Please replace the fields car_make and car_model with your name.  Please keep the year field the same.</p>
+      <pre id="problem-2">
+      </pre>
+      <div class="answerKey">
+        <h4>Solution</h4>
+        <pre id="answer-2">
+        </pre>
+        <h5>Feedback</h5>
+        <p id="feedback-2"></p>
+      </div>
+      <br>
+      <h3 class="problem-3">Problem 3:</h3>
+      <p>Write a query that will <strong><em>find</em></strong> and <strong><em>limit</em></strong> the results to get ONLY the 10 lowest mileage cars in the collection.  <strong><em>Sort</em></strong> your results from the lowest to highest mileage. </p>
+      <pre id="problem-3">
+      </pre>
+      <div class="answerKey">
+        <h4>Solution</h4>
+        <pre id="answer-3">
+        </pre>
+        <h5>Feedback</h5>
+        <p id="feedback-3"></p>
+      </div>
+      <br>
+      <h3 class="problem-4">Problem 4:</h3>
+      <p>Write a query to get a single random <strong><em>sample</em></strong> from your collection of cars.</p>
+      <pre id="problem-4">
+      </pre>
+      <div class="answerKey">
+        <h4>Solution</h4>
+        <pre id="answer-4">
+        </pre>
+        <h5>Feedback</h5>
+        <p id="feedback-4"></p>
+      </div>
+      <br>
+      <h3 class="problem-5">Problem 5:</h3>
+      <p><strong>Update<em></em></strong> the document(car with your name) that you created for problem 2.  Change the year from 2020 to 2018.  When you update be sure to only <strong><em>set</em></strong> the year.  Use car_model to target the document you want to <strong>update<em></em></strong>. If you accidently destroy the car document you created just rerun your solution to problem 2 to add it back to the database.</p>
+      <pre id="problem-5">
+      </pre>
+      <div class="answerKey">
+        <h4>Solution</h4>
+        <pre id="answer-5">
+        </pre>
+        <h5>Feedback</h5>
+        <p id="feedback-5"></p>
+      </div>
+      <br>
+      <h3 class="problemC-1">Challenge 1:</h3>
+      <p>Write a query that will <strong><em>find</em></strong> all of the cars that have a car_make of "BMW" <strong><em>and</em></strong> have a year of <strong><em>greater than</em></strong> 2000 <strong><em>or</em></strong> a mileage of <strong><em>less than</em></strong> 30000 miles.</p>
+      <pre id="challenge-1">
+      </pre>
+      <div class="answerKey">
+        <h4>Solution</h4>
+        <pre id="answerC-1">
+        </pre>
+        <h5>Feedback</h5>
+        <p id="feedbackC-1"></p>
+      </div>
+      <br>
+      <h3 class="problemC-2">Challenge 2:</h3>
+      <p>Write a query that will be used to paginate results using the variables provided in index.js. <strong>page = 2</strong> and <strong>numResultsPerPage = 5</strong>. Robo 3T does not have access to these variables so use their number values when testing in Robo 3T.</p>
+      <pre id="challenge-2">
+      </pre>
+      <div class="answerKey">
+        <h4>Solution</h4>
+        <pre id="answerC-2">
+        </pre>
+        <h5>Feedback</h5>
+        <p id="feedbackC-2"></p>
+      </div>
+      <br>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!-- <script src="mongoDB-with-robo-3T-answerKey.js" charset="utf-8"></script> -->
+  </body>
+</html>
